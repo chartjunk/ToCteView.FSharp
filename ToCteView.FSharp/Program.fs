@@ -28,5 +28,5 @@ let toCteView =
 
 [<EntryPoint; STAThread>]
 let main argv =
-    Clipboard.GetText() |> toCteView |> Clipboard.SetText
+    Clipboard.GetText(TextDataFormat.UnicodeText) |> toCteView |> Clipboard.SetText
     0
