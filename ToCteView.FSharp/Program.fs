@@ -14,7 +14,9 @@ let splitRow =
 let rec rowsToSelects = 
     function
     | x::_, _ when x = "" -> ""
-    | x::xs, h -> (List.fold2 (sprintf "%s%s AS [%s], ") (newline + "UNION ALL SELECT ") (splitRow x) h).TrimEnd(' ', ',') + rowsToSelects (xs,h)
+    | x::xs, h -> 
+        (List.fold2 (sprintf "%s%s AS [%s], ") (newline + "UNION ALL SELECT ") (splitRow x) h).TrimEnd(' ', ',') + 
+        rowsToSelects (xs,h)
     | _ -> ""
 
 let toCteView = 
