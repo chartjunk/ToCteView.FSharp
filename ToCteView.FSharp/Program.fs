@@ -9,7 +9,7 @@ let splitRow =
     split tab 
     >> List.map (function
     | x when x = "NULL" -> x
-    | x -> sprintf "'%s'" (x.Replace("'", "''")))
+    | x -> sprintf "N'%s'" (x.Replace("'", "''")))
 
 let rec rowsToSelects = 
     function
