@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ToCteView.FSharp", "ToCteView.FSharp\ToCteView.FSharp.fsproj", "{3A0F45F6-D2C4-497F-84A3-46F527CCA79B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A0F45F6-D2C4-497F-84A3-46F527CCA79B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A0F45F6-D2C4-497F-84A3-46F527CCA79B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A0F45F6-D2C4-497F-84A3-46F527CCA79B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A0F45F6-D2C4-497F-84A3-46F527CCA79B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC509218-C869-494F-B8BB-B3D697FDFC06}
+	EndGlobalSection
+EndGlobal
