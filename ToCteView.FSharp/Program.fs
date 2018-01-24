@@ -21,9 +21,7 @@ let rec rowsToSelects =
 
 let toCteView = 
     split newline 
-    >> function
-    | h::cs -> [";WITH mycte AS ( "] @ [rowsToSelects(cs, split tab h).[12..]] @ [") SELECT * FROM mycte"]
-    | _ -> []
+    >> fun l -> [";WITH mycte AS ( "] @ [rowsToSelects(l.Tail, split tab l.Head).[12..]] @ [") SELECT * FROM mycte"]
     >> String.concat newline
 
 [<EntryPoint; STAThread>]
